@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:id="@+id/contentPanel"
-        android:layout_width="260dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="12dp"
@@ -19,27 +19,71 @@
             android:layout_height="wrap_content"
             android:text="كلودي"
             android:textColor="#1E293B"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:textStyle="bold"
             android:gravity="center" />
 
-        <TextView
+        <EditText
+            android:id="@+id/inputField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="أنا مساعدك الشخصي، جاهز للمحادثة العربية."
+            android:hint="اكتب رسالة..."
+            android:textColor="#0F172A"
+            android:textColorHint="#94A3B8"
+            android:padding="8dp"
+            android:background="#E2E8F0"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="إرسال"
+                android:backgroundTint="#2563EB"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/voiceButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:text="🎙️"
+                android:backgroundTint="#16A34A"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/responseText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="مرحبا! أنا كلودي."
             android:textColor="#334155"
-            android:textSize="14sp"
-            android:gravity="center" />
+            android:textSize="12sp"
+            android:gravity="center"
+            android:textDirection="rtl" />
 
         <Button
             android:id="@+id/closeButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="إغلاق السحابة"
+            android:layout_marginTop="10dp"
+            android:text="إغلاق"
             android:backgroundTint="#0F172A"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
     </LinearLayout>
 
     <Button
@@ -50,5 +94,5 @@
         android:background="@drawable/cloud_button_background"
         android:text="☁️"
         android:textSize="32sp"
-        android:textColor="#0F172A" />
+        android:contentDescription="cloud button" />
 </LinearLayout>
