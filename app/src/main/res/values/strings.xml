@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">كلودي</string>
+    <string name="status_ready">جاهز</string>
+    <string name="status_listening_done">تم التقاط الصوت</string>
+    <string name="status_overlay_needed">يحتاج التطبيق إلى صلاحية العرض فوق التطبيقات</string>
+    <string name="status_microphone_needed">يحتاج التطبيق إلى صلاحية الميكروفون</string>
+    <string name="status_cloud_active">السحابة العائمة مفعلة</string>
+    <string name="status_speaking">جارٍ قراءة الرد</string>
+</resources>
