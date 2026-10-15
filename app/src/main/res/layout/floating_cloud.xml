@@ -11,13 +11,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="12dp"
-        android:background="@drawable/cloud_panel_background"
+        android:background="@drawable/robot_panel_background"
         android:visibility="gone">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="كلودي"
+            android:text="الخفاجي AI"
             android:textColor="#1E293B"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -64,12 +64,22 @@
                 android:textSize="12sp" />
         </LinearLayout>
 
+        <Button
+            android:id="@+id/translateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ترجمة الشاشة (فوري — سحابي)"
+            android:backgroundTint="#F59E0B"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
         <TextView
             android:id="@+id/responseText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="مرحبا! أنا كلودي."
+            android:text="مرحباً! أنا الخفاجي AI."
             android:textColor="#334155"
             android:textSize="12sp"
             android:gravity="center"
@@ -86,13 +96,12 @@
             android:textSize="12sp" />
     </LinearLayout>
 
-    <Button
+    <ImageButton
         android:id="@+id/cloudButton"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/cloud_button_background"
-        android:text="☁️"
-        android:textSize="32sp"
-        android:contentDescription="cloud button" />
+        android:background="@drawable/robot_button_background"
+        android:src="@drawable/ic_robot"
+        android:contentDescription="robot button" />
 </LinearLayout>
