@@ -6,8 +6,4 @@
     <string name="status_microphone_needed">يحتاج التطبيق إلى صلاحية الميكروفون</string>
     <string name="status_cloud_active">الروبوت العائم مفعّل</string>
     <string name="status_speaking">جارٍ قراءة الرد</string>
-
-    <!-- Cloud translation configuration (replace with your real endpoint/key in strings.xml or via secure gradle properties) -->
-    <string name="translation_api_url">https://api.example.com/translate</string>
-    <string name="translation_api_key">REPLACE_WITH_YOUR_API_KEY</string>
 </resources>

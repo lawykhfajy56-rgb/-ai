@@ -63,9 +63,9 @@ class FloatingCloudService : Service() {
     override fun onCreate() {
         super.onCreate()
         aiService = AIService(this)
-        // initialize cloudService with values from strings (replace with secure config as needed)
-        val url = getString(R.string.translation_api_url)
-        val key = getString(R.string.translation_api_key)
+        // initialize cloudService with values from BuildConfig (set via gradle.properties)
+        val url = BuildConfig.TRANSLATION_API_URL
+        val key = BuildConfig.TRANSLATION_API_KEY
         cloudService = CloudTranslationService(url, key)
 
         startForeground(1, buildNotification())
@@ -281,7 +281,7 @@ class FloatingCloudService : Service() {
                                 tts.speak(translated, TextToSpeech.QUEUE_FLUSH, null, "translate_tts")
                             }
                         } catch (e: Exception) {
-                            responseText.post { responseText.text = "خطأ في الترجمة السحابية: ${e.message}" }
+                            responseText.post { responseText.text = "خطأ ف�� الترجمة السحابية: ${e.message}" }
                         }
                     }
 

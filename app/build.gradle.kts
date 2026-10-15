@@ -14,6 +14,15 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Read translation config from gradle properties (project or user gradle.properties)
+        val translationApiUrl: String = (project.findProperty("translationApiUrl") as String?)
+            ?: "https://api.example.com/translate"
+        val translationApiKey: String = (project.findProperty("translationApiKey") as String?)
+            ?: "REPLACE_WITH_YOUR_API_KEY"
+
+        buildConfigField("String", "TRANSLATION_API_URL", "\"$translationApiUrl\"")
+        buildConfigField("String", "TRANSLATION_API_KEY", "\"$translationApiKey\"")
     }
 
     buildTypes {
